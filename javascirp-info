@@ -1,0 +1,233 @@
+3 ways to delcare a variable:
+
+var: Allows the most changing, anything can be done later (lots of bugs)
+let: Variable that is only present in a specific instance, so if you let a variable that is already declared somewhere else as someting under a if, it will not affect the variable outside the if
+const: Least amount of changing, 
+
+
+To declare a variable, it must include the type, the name, and an amount (if it has) then ;
+
+Ex:
+
+let name = "james";
+let age =12;
+let date of birth= 1004;
+let date of death;
+
+
+ARRAY
+you can also create arrays quite easily by adding [] brackets
+
+Ex:
+
+let movies =["redbull"]
+
+If you want to add an object to an array, you can use curly braces {}
+
+Ex:
+
+const locations=[{}]
+
+You can also pop elements from the end of an array, using .pop
+
+Ex:
+
+vegetable.pop()
+
+
+to find the index of a list, you can use indexOf
+
+Ex:
+
+
+
+HOW TO REFERENCE ELEMENTS FROM HTML AND CSS:
+
+you can declare a variable as a way to access elements
+
+Ex:
+
+const button1= document.querySelector("#button1");
+
+where button1 is the name of the tag in html, and #button1 is the selector in css
+
+HOW TO INITIALIZE BUTTONS:
+
+Ex:
+
+button1.onclick=goStore;
+button2.onclick=goCave;
+button3.onclick=fightDragon;
+
+in this example, whenevr any of these buttons are clicked, the attatched function will be called
+
+CREATING FUNCTIONS:
+
+Ex:
+
+function goStore () {
+  
+}
+
+here, parameters go into the normal brackets, and code goes into swiglies
+
+If these functions want to do anything, for instance log things into the console, there must be code to do so: 
+
+Ex:
+
+function goStore () {
+  console.log("Going to store.")
+}
+
+you can also change the text that was once somewhere:
+
+Ex:
+
+ button2.innerText ="Go to cave";
+
+in this case, whatever text that was once on button2 will be change to what was entered now
+
+to return things, just put return before end bracket 
+
+Ex:
+
+function getMonsterAttackValue(level){
+  let hit=(level*5)-(Math.floor(Math.random()*xp));
+  console.log(hit)
+  return hit;
+}
+
+
+
+OBJECTS:
+
+Objects are created with associated name value pairs. Here is an example from the videogame example, where two objects are created, where both of them are objects of locations:
+
+Ex:
+
+const locations = [
+    {
+    name: "town square",
+    "button text":["Go to store","Go to cave", "Fight dragon" ],
+    "button functions": [goStore,goCave,fightDragon]
+    text:"You enter the store"
+    },
+
+    {
+     name: "store",
+    "button text":["Buy 10 health (10 gold)","Buy weapon(30 gold)", "Go to town square" ],
+    "button functions": [buyHealth,buyWeapon,fightDragon]
+     text: "You are in the town Square. You see a sign that says \"store\" "
+    },
+
+]
+
+Each object is defined in {}, which are inside of a list of locations. They each contain similar information, to help define what will play when the player is in a diffeernt location
+
+Acessing elemetns within objects:
+
+Ex:
+
+location["button text"], this will access the array location, and get the value for button text
+
+to alter text from html to a variable, you can use the text id such that it can be replaced with variables. for instance, if the id in html is goldText, and the variable in javascript is gold, you can replace this gold with a changing amount:
+
+ex:
+
+  goldText.innerText=gold;
+
+IF ELSE STATEMENTS 
+
+Ex:
+
+if (condition){
+
+} else{
+
+}
+There is another way to do an if else statement in one line. For instance, the following if else:
+
+if (age<18){
+kidFunction()
+}else{adultFunction()}
+
+Can be written as:
+
+Ex:
+
+age<18 ? kidFunction(): AdultFunction()
+
+If you want to add a or statement, ou can use the following:
+
+Ex:
+
+|| for "or" 
+&& for "and"
+
+
+
+To add a variable within a string, you must use a + sign
+
+Ex:
+
+"you now have"+ variable+ "new shirts"
+
+LISTS
+
+to add a element to a list, you can push it
+
+Ex:
+
+inventory.push(newWeapon)
+
+to remove the first element from an array and then return it, you can use shift (like pop)
+
+ex:
+
+let currentWeapon=inventory.shift()
+
+TEXT
+
+to add more text to a certain line, you can do the following:
+
+Ex:
+
+text.innerText += "you also love to eat snacks"
+
+HOW TO ALTER CSS APPEARENCE (like hide/show)
+
+Ex:
+
+ monsterStats.style.display="block"
+
+changes the display from css that was once display:none; to block
+
+random number between 0 and 1
+
+Ex:
+
+math.random() 
+
+floor division 
+
+Ex:
+math.floor()
+
+LOOPS
+
+for while loops: 
+
+ex:
+
+while () {
+
+}
+
+for loops:
+
+Ex:
+
+  for (let i=0; i<10;i++) {
+    
+  }
+
